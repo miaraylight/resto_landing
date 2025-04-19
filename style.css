@@ -36,6 +36,7 @@ ul {
 /* Root Variables */
 :root {
     --color-primary: #c62828;
+    --color-primary: #303030;
     --color-secondary: #bf360c;
     --color-bg: #fff8f0;
     --color-footer-bg: #e0e0e0;
@@ -55,15 +56,34 @@ ul {
     --max-width: 1200px;
 }
 
+/* header */
+
 header {
     background-color: var(--color-primary);
     color: var(--color-light);
     padding: var(--spacing-sm);
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
     font-family: var(--font-heading);
+    margin: 0;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo-title {
+    color: #ffffff;
+}
+
+.header-logo-img {
+    width: 100px;
+    height: 100px;
 }
 
 .header-nav {
@@ -80,6 +100,70 @@ header h1 {
 .header-nav a:hover {
     color: var(--color-bg);
 }
+/* hero */
+
+.hero-title-box {
+    width: 50%;
+    height: 500px;
+    position: absolute;
+    top: 164px;
+    background: #33333393;
+    opacity: 1;
+    z-index: 2;
+    padding: var(--spacing-lg);
+    backdrop-filter: blur(4px);
+}
+
+.hero-title-box h2 {
+    font-size: 4rem;
+}
+
+.hero-title-box p {
+    font-size: 1.3rem;
+    color: white;
+}
+
+/* slider */
+
+    .fade-carousel {
+      position: relative;
+      width: 100%;
+      max-width: 100vw;
+      height: 500px;
+      overflow: hidden;
+    }
+
+    .fade-carousel img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      animation: fade-cycle 9s infinite ease-in-out;
+    }
+
+    .fade-carousel img:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .fade-carousel img:nth-child(2) {
+      animation-delay: 3s;
+    }
+
+    .fade-carousel img:nth-child(3) {
+      animation-delay: 6s;
+    }
+
+    @keyframes fade-cycle {
+      0% { opacity: 0; }
+      10% { opacity: 1; }
+      30% { opacity: 1; }
+      40% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+
 
 main {
     padding: var(--spacing-md);
@@ -96,6 +180,8 @@ h2 {
 section {
     margin-bottom: var(--spacing-lg);
 }
+
+/* footer */
 
 footer {
     background-color: var(--color-footer-bg);
@@ -205,6 +291,8 @@ footer {
     color: #e0e0e0;
     text-align: center;
 }
+
+/* -------------------------------------- */
 
 /* Responsive Styles */
 @media (max-width: 768px) {
