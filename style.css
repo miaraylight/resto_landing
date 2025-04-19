@@ -1,0 +1,157 @@
+/* File: style.css */
+
+/* Normalized base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+  }
+  
+  body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* Root Variables */
+  :root {
+    --color-primary: #c62828;
+    --color-secondary: #bf360c;
+    --color-bg: #fff8f0;
+    --color-footer-bg: #e0e0e0;
+    --color-text: #333;
+    --color-light: #ffffff;
+  
+    --font-body: 'Arial', sans-serif;
+    --font-heading: 'Georgia', serif;
+  
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 2rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+  
+    --border-radius: 0.5rem;
+    --max-width: 1200px;
+  }
+  
+  header {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    padding: var(--spacing-sm);
+    text-align: center;
+  }
+  
+  header h1 {
+    font-family: var(--font-heading);
+  }
+  
+  nav {
+    margin-top: var(--spacing-xs);
+  }
+  
+  nav a {
+    color: var(--color-light);
+    margin: 0 var(--spacing-sm);
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: var(--color-bg);
+  }
+  
+  main {
+    padding: var(--spacing-md);
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+  
+  h1, h2 {
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  section {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  footer {
+    background-color: var(--color-footer-bg);
+    text-align: center;
+
+  }
+
+  .footer-container {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    padding: var(--spacing-sm);
+  }
+
+  .footer-logo {
+    border: 1px solid red;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact {
+    border: 1px solid red;
+  }
+
+
+  .socials {
+    border: 1px solid red;
+  }
+
+  .map, .copyright {
+    background-color: #333;
+  }
+
+    .copyright {
+    padding: var(--spacing-sm);
+    color: #e0e0e0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    nav a {
+      display: block;
+      margin: var(--spacing-xs) 0;
+    }
+  
+    main {
+      padding: var(--spacing-sm);
+    }
+  
+    header, footer {
+      text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+      }
+  }
+  
