@@ -256,6 +256,66 @@ header h1 {
       .modal-nav button:hover {
         transform: scale(1.2);
       }
+/* Welcome */
+
+      .welcome-hero {
+        background: url('public/hero-bg.jpg') center/cover no-repeat;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 60vh;
+        padding: var(--spacing-lg);
+      }
+      
+      .welcome-content {
+        background: rgba(0, 0, 0, 0.6);
+        padding: var(--spacing-md);
+        border-radius: var(--border-radius);
+        max-width: 600px;
+      }
+      
+      .welcome-content h1 {
+        font-family: var(--font-heading);
+        font-size: 3rem;
+        margin-bottom: var(--spacing-xs);
+      }
+      
+      .welcome-content p {
+        font-size: 1.25rem;
+        margin-bottom: var(--spacing-sm);
+      }
+      
+      .cta-button {
+        display: inline-block;
+        background-color: var(--color-primary);
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: var(--border-radius);
+        font-weight: bold;
+        transition: background-color 0.3s;
+      }
+      
+      .cta-button:hover {
+        background-color: var(--color-secondary);
+      }
+      
+      .fade-in-on-scroll {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+      }
+      
+      .fade-in-on-scroll.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .welcome-hero.parallax {
+        background: url('public/hero-bg.jpg') center center / cover no-repeat fixed;
+      }
+
 
 h1,
 h2 {

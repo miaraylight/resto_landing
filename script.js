@@ -46,3 +46,16 @@ window.addEventListener('keydown', e => {
 modal.addEventListener('click', (e) => {
   if (e.target === modal || e.target === modalImg) closeModal();
 });
+
+  // Fade-in on scroll
+  const faders = document.querySelectorAll('.fade-in-on-scroll');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  faders.forEach(fader => observer.observe(fader));
