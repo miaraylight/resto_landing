@@ -1,42 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menu - La Catrina</title>
-  <meta name="description" content="Explore our menu full of traditional Mexican dishes like tacos al pastor, enchiladas, and fresh guacamole." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>La Catrina Menu</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
     <header>
-        <h1>Our Menu</h1>
-        <nav>
+        <div class="header-logo">
+            <img src="public/logo.png" alt="logo" class="header-logo-img">
+            <h1 class="header-logo-title">La Catrina</h1>
+        </div>
+        
+        <nav class="header-nav">
           <a href="index.html">Home</a>
           <a href="menu.html">Menu</a>
           <a href="about.html">About Us</a>
         </nav>
       </header>
-    
-      <main>
-        <section>
-          <h2>Tacos</h2>
-          <ul>
-            <li>Tacos al Pastor</li>
-            <li>Carne Asada Tacos</li>
-            <li>Vegetarian Tacos</li>
-          </ul>
-    
-          <h2>Specialties</h2>
-          <ul>
-            <li>Enchiladas Verdes</li>
-            <li>Chicken Mole</li>
-            <li>Chiles Rellenos</li>
-          </ul>
-        </section>
-      </main>
-    
-      <footer>
-        <p>&copy; 2025 La Catrina</p>
+
+
+<nav class="menu-nav">
+  <button data-category="breakfast" class="active">Breakfast</button>
+  <button data-category="appetizers">Appetizers</button>
+  <button data-category="tacos">Tacos</button>
+  <button data-category="burritos">Burritos</button>
+  <button data-category="platillos">Platillos</button>
+  <button data-category="seafood">Seafood</button>
+  <button data-category="desserts">Desserts</button>
+  <button data-category="drinks">Drinks</button>
+</nav>
+
+<main>
+  <section id="menu-content" class="menu-category"></section>
+</main>
+
+    <!-- Footer -->
+    <footer aria-label="Site footer">
+        <div class="footer-container" role="contentinfo">
+      
+          <div class="footer-logo">
+            <h5 class="footer-logo-title">La Catrina</h5>
+            <p>Mexican Food Restaurant</p>
+          </div>
+      
+          <section class="contact" aria-labelledby="footer-contact-title">
+            <p id="footer-contact-title" class="footer-title">Contact</p>
+            <address>
+              <div class="contact-item">
+                <svg role="img" aria-label="Email icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" viewBox="0 0 24 24">
+                  <path d="M20 4H4a2 2 0 0 0-2 2v0.01L12 13l10-6.99V6a2 2 0 0 0-2-2zM2 8.2V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8.2l-9.12 6.38a1 1 0 0 1-1.16 0L2 8.2z" />
+                </svg>
+                <a href="mailto:info@mexicanflavor.com">info@mexicanflavor.com</a>
+              </div>
+      
+              <div class="contact-item">
+                <svg role="img" aria-label="Phone icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" viewBox="0 0 50 50">
+                  <path d="M 14 3.99C 8.49 3.99 4 8.48 4 13.99v22C4 41.5 8.49 46 14 46h22c5.51 0 10-4.49 10-10V13.99C46 8.48 41.51 3.99 36 3.99H14zM18.01 12.03c.63.03 1.21.39 1.56.93.4.62 1.01 1.59 1.8 2.81.73 1.14.78 2.61.13 3.78l-1.47 2.08c-.39.56-.47 1.29-.19 1.9.4.9 1.22 2.39 2.63 3.8s2.9 2.23 3.8 2.63c.61.28 1.34.2 1.9-.19l2.08-1.47c1.17-.65 2.64-.6 3.78.13 1.22.79 2.19 1.4 2.81 1.8.54.35.9.93.93 1.56.15 3.57-2.6 5.01-3.4 5.01-.56 0-7.24.76-14.78-6.78-7.54-7.54-6.78-14.22-6.78-14.78 0-.8 1.44-3.55 5.01-3.4z" />
+                </svg>
+                <a href="tel:7737729566">(773) 772-9566</a>
+              </div>
+      
+              <div class="contact-item">
+                <svg role="img" aria-label="Location icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" viewBox="0 0 24 24">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                </svg>
+                <p>3924 W Diversey Ave, Chicago, IL 60647</p>
+              </div>
+            </address>
+          </section>
+      
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <p class="footer-title">Navigate</p>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About Us</a>
+          </nav>
+      
+          <div class="socials">
+            <p class="footer-title">Follow us</p>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"></path>
+              </svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.5867289465573!2d-87.72658882408743!3d41.931202563349176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fcd5d93b8bc87%3A0xc7bcce2b0bb89d7e!2s3924%20W%20Diversey%20Ave%2C%20Chicago%2C%20IL%2060647!5e0!3m2!1sen!2sus!4v1713460733297!5m2!1sen!2sus" width="100%" height="250" style="border:0; border-radius: var(--border-radius); margin-top: var(--spacing-sm);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      
+        <p class="copyright">&copy; 2025 La Catrina Restaurant</p>
       </footer>
+      <!-- --- -->
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+const menuData = {
+    "breakfast": [
+      {
+        "name": "Huevos con Jamón",
+        "price": "$14.99",
+        "description": "Eggs with ham"
+      },
+      {
+        "name": "Huevos a la Mexicana",
+        "price": "$14.99",
+        "description": "Eggs scrambled in tomato-based salsa"
+      },
+      {
+        "name": "Huevos con Chorizo",
+        "price": "$14.99",
+        "description": "Eggs with Mexican sausage"
+      },
+      {
+        "name": "Huevos Rancheros",
+        "price": "$14.99",
+        "description": "Fried eggs with tortilla and salsa"
+      },
+      {
+        "name": "Chilaquiles",
+        "price": "$11.50",
+        "description": "Tortilla chips in red or green salsa"
+      }
+    ],
+    "appetizers": [
+      {
+        "name": "Guacamole & Chips",
+        "price": "$7.99",
+        "description": "Fresh avocado dip & tortilla chips"
+      },
+      {
+        "name": "Nachos with Meat",
+        "price": "$14.99",
+        "description": "Tortilla chips loaded with beef & cheese"
+      },
+      {
+        "name": "Wings (8pc)",
+        "price": "$10.00",
+        "description": "Crispy chicken wings"
+      },
+      {
+        "name": "Wings (12pc)",
+        "price": "$14.99",
+        "description": "Crispy chicken wings"
+      },
+      {
+        "name": "Fried Calamari",
+        "price": "$11.99",
+        "description": "Lightly breaded rings with chipotle mayo"
+      }
+    ],
+    "tacos": [
+      {
+        "name": "Steak Taco",
+        "price": "$3.99",
+        "description": null
+      },
+      {
+        "name": "Al Pastor Taco",
+        "price": "$3.99",
+        "description": "Spicy marinated pork"
+      },
+      {
+        "name": "Birria Taco",
+        "price": "$17.99",
+        "description": "Served with consomé"
+      },
+      {
+        "name": "Quesabirria Trio",
+        "price": "$18.99",
+        "description": "Three beef & cheese tacos with consomé"
+      },
+      {
+        "name": "Lengua Taco",
+        "price": "$4.99",
+        "description": "Tender beef tongue"
+      }
+    ],
+    "burritos": [
+      {
+        "name": "Burrito (Any filling)",
+        "price": "$10.99",
+        "description": "Served with beans, cheese, sour cream, lettuce, tomato"
+      },
+      {
+        "name": "Catrina Burrito",
+        "price": "$14.99",
+        "description": "House special with bold flavor"
+      },
+      {
+        "name": "Burrito Dinner",
+        "price": "$16.99",
+        "description": "Choice of shrimp, fish, or lengua"
+      },
+      {
+        "name": "Burrito Dinner w/ Mole",
+        "price": "$17.99",
+        "description": "Topped with mole or red salsa"
+      }
+    ],
+    "platillos": [
+      {
+        "name": "Chicken Dinner",
+        "price": "$17.99",
+        "description": null
+      },
+      {
+        "name": "Enchiladas (Cheese/Meat)",
+        "price": "$15.99",
+        "description": "Rolled tortillas with sauce & garnish"
+      },
+      {
+        "name": "Carne Asada",
+        "price": "$18.99",
+        "description": "Grilled beef steak"
+      },
+      {
+        "name": "Steak & Shrimp",
+        "price": "$22.99",
+        "description": "Grilled steak and shrimp combo"
+      },
+      {
+        "name": "Chile Relleno Dinner",
+        "price": "$16.99",
+        "description": "Stuffed poblano pepper"
+      }
+    ],
+    "seafood": [
+      {
+        "name": "Camarones al Mojo",
+        "price": "$20.99",
+        "description": "Shrimp in garlic butter sauce"
+      },
+      {
+        "name": "Camarones a la Diabla",
+        "price": "$20.99",
+        "description": "Spicy red-sauce shrimp"
+      },
+      {
+        "name": "Mojarra (entera)",
+        "price": "$25.99",
+        "description": "Whole tilapia in garlic or diabla style"
+      },
+      {
+        "name": "Coctel de Camarón",
+        "price": "$17.00",
+        "description": "Shrimp cocktail with avocado & tomato"
+      },
+      {
+        "name": "Tostadas de Ceviche",
+        "price": "$6.99",
+        "description": "Seafood ceviche on tostadas"
+      }
+    ],
+    "desserts": [
+      {
+        "name": "Churro",
+        "price": "$6.00",
+        "description": null
+      },
+      {
+        "name": "Flan",
+        "price": "$4.00",
+        "description": null
+      },
+      {
+        "name": "Tiramisu",
+        "price": "$4.99",
+        "description": null
+      },
+      {
+        "name": "Oreo Cake",
+        "price": "$4.99",
+        "description": null
+      }
+    ],
+    "drinks": [
+      {
+        "name": "Margarita Queen",
+        "price": "$15.00",
+        "description": null
+      },
+      {
+        "name": "Michelada",
+        "price": "$12.00",
+        "description": "Classic spiced beer cocktail"
+      },
+      {
+        "name": "Jarritos",
+        "price": "$2.99",
+        "description": null
+      },
+      {
+        "name": "Horchata / Jamaica",
+        "price": "$2.99–$5.99",
+        "description": "Traditional Mexican drinks"
+      },
+      {
+        "name": "Domestic Beer",
+        "price": "$5.00",
+        "description": null
+      },
+      {
+        "name": "Imported Beer",
+        "price": "$6.00",
+        "description": null
+      }
+    ]
+  };
+  const menuContainer = document.getElementById("menu-content");
+  const buttons = document.querySelectorAll(".menu-nav button");
+
+  function capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+
+  function renderMenu(category) {
+    const items = menuData[category];
+    if (!items) return;
+    menuContainer.innerHTML = `
+      <h2>${capitalize(category)}</h2>
+      ${items.map(item => `
+        <article class="menu-item">
+          <h3>${item.name} <span>${item.price}</span></h3>
+          ${item.description ? `<p>${item.description}</p>` : ""}
+        </article>
+      `).join("")}
+    `;
+  }
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const category = button.dataset.category;
+      buttons.forEach(b => b.classList.remove("active"));
+      button.classList.add("active");
+      renderMenu(category);
+    });
+  });
+
+  renderMenu("breakfast");
+});
+</script>
+
 </body>
 </html>

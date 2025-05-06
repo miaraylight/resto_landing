@@ -1,41 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>About Us - La Catrina</title>
-        <meta name="description" content="Learn about the story behind Casa del Sabor – a family-owned Mexican restaurant bringing generations of flavor to your table." />
-        <link rel="stylesheet" href="style.css" />
-      </head>
-      <body>
-        <header>
-          <h1>About La Catrina</h1>
-          <nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - La Catrina</title>
+  <meta name="description" content="Learn about the story behind La Catrina – a family-owned Mexican restaurant bringing generations of flavor to your table." />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root {
+
+
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: var(--spacing-lg) var(--spacing-sm);
+    }
+
+    section {
+      margin-bottom: var(--spacing-lg);
+    }
+
+    h2 {
+      color: var(--color-primary);
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      border-left: 4px solid var(--color-secondary);
+      padding-left: 0.5rem;
+    }
+
+    p {
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+
+    .section-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      margin-top: var(--spacing-sm);
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      background: #eee;
+      padding: var(--spacing-sm);
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .header-logo-title {
+        font-size: 1.4rem;
+      }
+
+      .header-nav {
+        margin-top: 1rem;
+        width: 100%;
+        text-align: center;
+      }
+
+      .header-nav a {
+        display: inline-block;
+        margin: 0.5rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-logo">
+      <img src="public/logo.png" alt="La Catrina Logo" class="header-logo-img" />
+      <h1 class="header-logo-title">La Catrina</h1>
+    </div>
+
+    <nav class="header-nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Our Story</h2>
+      <p>Founded in 1998 by the Ramirez family, La Catrina is built on traditional recipes passed down for generations. What started as a small kitchen in a Chicago neighborhood has grown into a beloved spot for locals and visitors alike.</p>
+      <img src="https://img.freepik.com/premium-photo/chef-is-cooking-restaurant-kitchen_36682-135989.jpg" alt="La Catrina kitchen history" class="section-image" />
+    </section>
+
+    <section>
+      <h2>Our Mission</h2>
+      <p>To bring the rich, vibrant flavors of Mexico to our community using fresh, locally sourced ingredients. Every dish tells a story, and we are proud to serve food that’s made with love, care, and authentic spices.</p>
+      <img src="https://www.nhmagazine.com/content/uploads/2022/04/o/z/mexicanrestaurant-1024x683.jpg" alt="Mexican ingredients and traditions" class="section-image" />
+    </section>
+
+    <section>
+      <h2>Meet the Family</h2>
+      <p>Maria Ramirez, our head chef, learned her techniques from her grandmother in Oaxaca. Her son, Diego, manages the restaurant and ensures every guest feels like part of the family.</p>
+      <img src="https://images.stockcake.com/public/6/5/e/65e96f37-70e3-4926-ab56-7d5c522304fe_large/family-mexican-dinner-stockcake.jpg" alt="The Ramirez family team" class="section-image" />
+    </section>
+  </main>
+
+    <!-- Footer -->
+    <footer aria-label="Site footer">
+        <div class="footer-container" role="contentinfo">
+      
+          <div class="footer-logo">
+            <h5 class="footer-logo-title">La Catrina</h5>
+            <p>Mexican Food Restaurant</p>
+          </div>
+      
+          <section class="contact" aria-labelledby="footer-contact-title">
+            <p id="footer-contact-title" class="footer-title">Contact</p>
+            <address>
+              <div class="contact-item">
+                <svg role="img" aria-label="Email icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" viewBox="0 0 24 24">
+                  <path d="M20 4H4a2 2 0 0 0-2 2v0.01L12 13l10-6.99V6a2 2 0 0 0-2-2zM2 8.2V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8.2l-9.12 6.38a1 1 0 0 1-1.16 0L2 8.2z" />
+                </svg>
+                <a href="mailto:info@mexicanflavor.com">info@mexicanflavor.com</a>
+              </div>
+      
+              <div class="contact-item">
+                <svg role="img" aria-label="Phone icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" viewBox="0 0 50 50">
+                  <path d="M 14 3.99C 8.49 3.99 4 8.48 4 13.99v22C4 41.5 8.49 46 14 46h22c5.51 0 10-4.49 10-10V13.99C46 8.48 41.51 3.99 36 3.99H14zM18.01 12.03c.63.03 1.21.39 1.56.93.4.62 1.01 1.59 1.8 2.81.73 1.14.78 2.61.13 3.78l-1.47 2.08c-.39.56-.47 1.29-.19 1.9.4.9 1.22 2.39 2.63 3.8s2.9 2.23 3.8 2.63c.61.28 1.34.2 1.9-.19l2.08-1.47c1.17-.65 2.64-.6 3.78.13 1.22.79 2.19 1.4 2.81 1.8.54.35.9.93.93 1.56.15 3.57-2.6 5.01-3.4 5.01-.56 0-7.24.76-14.78-6.78-7.54-7.54-6.78-14.22-6.78-14.78 0-.8 1.44-3.55 5.01-3.4z" />
+                </svg>
+                <a href="tel:7737729566">(773) 772-9566</a>
+              </div>
+      
+              <div class="contact-item">
+                <svg role="img" aria-label="Location icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" viewBox="0 0 24 24">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                </svg>
+                <p>3924 W Diversey Ave, Chicago, IL 60647</p>
+              </div>
+            </address>
+          </section>
+      
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <p class="footer-title">Navigate</p>
             <a href="index.html">Home</a>
             <a href="menu.html">Menu</a>
             <a href="about.html">About Us</a>
           </nav>
-        </header>
       
-        <main>
-          <section>
-            <h2>Our Story</h2>
-            <p>Founded in 1998 by the Ramirez family, La Catrina is built on traditional recipes passed down for generations. What started as a small kitchen in a Chicago neighborhood has grown into a beloved spot for locals and visitors alike.</p>
-          </section>
+          <div class="socials">
+            <p class="footer-title">Follow us</p>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"></path>
+              </svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
       
-          <section>
-            <h2>Our Mission</h2>
-            <p>To bring the rich, vibrant flavors of Mexico to our community using fresh, locally sourced ingredients. Every dish tells a story, and we are proud to serve food that’s made with love, care, and authentic spices.</p>
-          </section>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.5867289465573!2d-87.72658882408743!3d41.931202563349176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fcd5d93b8bc87%3A0xc7bcce2b0bb89d7e!2s3924%20W%20Diversey%20Ave%2C%20Chicago%2C%20IL%2060647!5e0!3m2!1sen!2sus!4v1713460733297!5m2!1sen!2sus" width="100%" height="250" style="border:0; border-radius: var(--border-radius); margin-top: var(--spacing-sm);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       
-          <section>
-            <h2>Meet the Family</h2>
-            <p>Maria Ramirez, our head chef, learned her techniques from her grandmother in Oaxaca. Her son, Diego, manages the restaurant and ensures every guest feels like part of the family.</p>
-          </section>
-        </main>
-      
-        <footer>
-          <p>&copy; 2025 La Catrina</p>
-        </footer>
-      </body>
+        <p class="copyright">&copy; 2025 La Catrina Restaurant</p>
+      </footer>
+      <!-- --- -->
+
+</body>
 </html>
