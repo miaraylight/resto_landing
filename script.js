@@ -59,3 +59,21 @@ modal.addEventListener('click', (e) => {
   }, { threshold: 0.3 });
 
   faders.forEach(fader => observer.observe(fader));
+
+
+  const fadeSections = document.querySelectorAll(".fade-section");
+
+  const observer1 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target); // animate once
+      }
+    });
+  }, { threshold: 0.3 });
+
+  fadeSections.forEach(section => {
+    observer1.observe(section);
+  });
+
+

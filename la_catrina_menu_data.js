@@ -3,7 +3,8 @@ const menuData = {
     {
       "name": "Huevos con Jam\u00f3n",
       "price": "$14.99",
-      "description": "Eggs with ham"
+      "description": "Eggs with ham",
+      "image": "public/images/birria.jpg"
     },
     {
       "name": "Huevos a la Mexicana",
