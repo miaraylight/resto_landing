@@ -2,164 +2,164 @@
 // (menuData & renderMenu defined inside DOMContentLoaded)
 document.addEventListener("DOMContentLoaded", () => {
   const menuData = {
-    "breakfast": [
+    "Desayunos": [
       {
         "name": "Huevos con Jamón",
         "price": "$14.99",
-        "description": "Eggs with ham",
+        "description": "Huevos con jamón"
       },
       {
         "name": "Huevos a la Mexicana",
         "price": "$14.99",
-        "description": "Eggs scrambled in tomato-based salsa"
+        "description": "Huevos revueltos con salsa a base de tomate"
       },
       {
         "name": "Huevos con Chorizo",
         "price": "$14.99",
-        "description": "Eggs with Mexican sausage"
+        "description": "Huevos con chorizo mexicano"
       },
       {
         "name": "Huevos Rancheros",
         "price": "$14.99",
-        "description": "Fried eggs with tortilla and salsa"
+        "description": "Huevos fritos con tortilla y salsa"
       },
       {
         "name": "Chilaquiles",
         "price": "$11.50",
-        "description": "Tortilla chips in red or green salsa"
+        "description": "Totopos en salsa roja o verde"
       }
     ],
-    "appetizers": [
+    "Entradas": [
       {
-        "name": "Guacamole & Chips",
+        "name": "Guacamole con Totopos",
         "price": "$7.99",
-        "description": "Fresh avocado dip & tortilla chips"
+        "description": "Dip de aguacate fresco con totopos"
       },
       {
-        "name": "Nachos with Meat",
+        "name": "Nachos con Carne",
         "price": "$14.99",
-        "description": "Tortilla chips loaded with beef & cheese"
+        "description": "Totopos con carne de res y queso"
       },
       {
-        "name": "Wings (8pc)",
+        "name": "Alitas (8 piezas)",
         "price": "$10.00",
-        "description": "Crispy chicken wings"
+        "description": "Alitas de pollo crujientes"
       },
       {
-        "name": "Wings (12pc)",
+        "name": "Alitas (12 piezas)",
         "price": "$14.99",
-        "description": "Crispy chicken wings"
+        "description": "Alitas de pollo crujientes"
       },
       {
-        "name": "Fried Calamari",
+        "name": "Calamares Empanizados",
         "price": "$11.99",
-        "description": "Lightly breaded rings with chipotle mayo"
+        "description": "Aros empanizados con mayonesa de chipotle"
       }
     ],
-    "tacos": [
+    "Tacos": [
       {
-        "name": "Steak Taco",
+        "name": "Taco de Bistec",
         "price": "$3.99",
         "description": null
       },
       {
-        "name": "Al Pastor Taco",
+        "name": "Taco al Pastor",
         "price": "$3.99",
-        "description": "Spicy marinated pork"
+        "description": "Carne de cerdo marinada picante"
       },
       {
-        "name": "Birria Taco",
+        "name": "Taco de Birria",
         "price": "$17.99",
-        "description": "Served with consomé"
+        "description": "Servido con consomé"
       },
       {
-        "name": "Quesabirria Trio",
+        "name": "Trío de Quesabirrias",
         "price": "$18.99",
-        "description": "Three beef & cheese tacos with consomé"
+        "description": "Tres tacos de birria con queso y consomé"
       },
       {
-        "name": "Lengua Taco",
+        "name": "Taco de Lengua",
         "price": "$4.99",
-        "description": "Tender beef tongue"
+        "description": "Lengua de res tierna"
       }
     ],
-    "burritos": [
+    "Burritos": [
       {
-        "name": "Burrito (Any filling)",
+        "name": "Burrito (Relleno a elegir)",
         "price": "$10.99",
-        "description": "Served with beans, cheese, sour cream, lettuce, tomato"
+        "description": "Con frijoles, queso, crema, lechuga y tomate"
       },
       {
-        "name": "Catrina Burrito",
+        "name": "Burrito Catrina",
         "price": "$14.99",
-        "description": "House special with bold flavor"
+        "description": "Especial de la casa con sabor intenso"
       },
       {
-        "name": "Burrito Dinner",
+        "name": "Cena de Burrito",
         "price": "$16.99",
-        "description": "Choice of shrimp, fish, or lengua"
+        "description": "A elegir entre camarón, pescado o lengua"
       },
       {
-        "name": "Burrito Dinner w/ Mole",
+        "name": "Cena de Burrito con Mole",
         "price": "$17.99",
-        "description": "Topped with mole or red salsa"
+        "description": "Cubierto con mole o salsa roja"
       }
     ],
-    "platillos": [
+    "Platillos": [
       {
-        "name": "Chicken Dinner",
+        "name": "Cena de Pollo",
         "price": "$17.99",
         "description": null
       },
       {
-        "name": "Enchiladas (Cheese/Meat)",
+        "name": "Enchiladas (Queso/Carne)",
         "price": "$15.99",
-        "description": "Rolled tortillas with sauce & garnish"
+        "description": "Tortillas enrolladas con salsa y guarnición"
       },
       {
         "name": "Carne Asada",
         "price": "$18.99",
-        "description": "Grilled beef steak"
+        "description": "Bistec de res a la parrilla"
       },
       {
-        "name": "Steak & Shrimp",
+        "name": "Carne y Camarón",
         "price": "$22.99",
-        "description": "Grilled steak and shrimp combo"
+        "description": "Combinación de carne asada y camarones"
       },
       {
-        "name": "Chile Relleno Dinner",
+        "name": "Cena de Chile Relleno",
         "price": "$16.99",
-        "description": "Stuffed poblano pepper"
+        "description": "Chile poblano relleno"
       }
     ],
-    "seafood": [
+    "Mariscos": [
       {
         "name": "Camarones al Mojo",
         "price": "$20.99",
-        "description": "Shrimp in garlic butter sauce"
+        "description": "Camarones en salsa de mantequilla con ajo"
       },
       {
         "name": "Camarones a la Diabla",
         "price": "$20.99",
-        "description": "Spicy red-sauce shrimp"
+        "description": "Camarones en salsa roja picante"
       },
       {
-        "name": "Mojarra (entera)",
+        "name": "Mojarra Entera",
         "price": "$25.99",
-        "description": "Whole tilapia in garlic or diabla style"
+        "description": "Tilapia entera al mojo o a la diabla"
       },
       {
         "name": "Coctel de Camarón",
         "price": "$17.00",
-        "description": "Shrimp cocktail with avocado & tomato"
+        "description": "Cóctel de camarón con aguacate y tomate"
       },
       {
         "name": "Tostadas de Ceviche",
         "price": "$6.99",
-        "description": "Seafood ceviche on tostadas"
+        "description": "Ceviche de mariscos en tostadas"
       }
     ],
-    "desserts": [
+    "Postres": [
       {
         "name": "Churro",
         "price": "$6.00",
@@ -171,26 +171,26 @@ document.addEventListener("DOMContentLoaded", () => {
         "description": null
       },
       {
-        "name": "Tiramisu",
+        "name": "Tiramisú",
         "price": "$4.99",
         "description": null
       },
       {
-        "name": "Oreo Cake",
+        "name": "Pastel de Oreo",
         "price": "$4.99",
         "description": null
       }
     ],
-    "drinks": [
+    "Bebidas": [
       {
-        "name": "Margarita Queen",
+        "name": "Margarita Reina",
         "price": "$15.00",
         "description": null
       },
       {
         "name": "Michelada",
         "price": "$12.00",
-        "description": "Classic spiced beer cocktail"
+        "description": "Cóctel de cerveza con especias"
       },
       {
         "name": "Jarritos",
@@ -200,15 +200,15 @@ document.addEventListener("DOMContentLoaded", () => {
       {
         "name": "Horchata / Jamaica",
         "price": "$2.99–$5.99",
-        "description": "Traditional Mexican drinks"
+        "description": "Bebidas tradicionales mexicanas"
       },
       {
-        "name": "Domestic Beer",
+        "name": "Cerveza Nacional",
         "price": "$5.00",
         "description": null
       },
       {
-        "name": "Imported Beer",
+        "name": "Cerveza Importada",
         "price": "$6.00",
         "description": null
       }
@@ -254,7 +254,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  renderMenu("breakfast");
+  renderMenu("Desayunos");
 });
 
 // Observe all elements meant to fade in
