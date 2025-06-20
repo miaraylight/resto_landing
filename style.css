@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'desdemona';
-    src: url('Desdemona.woff2') format('woff2'),
-        url('Desdemona.woff') format('woff');
+    src: url('/public/fonts/Desdemona.woff2') format('woff2'),
+        url('/public/fonts/Desdemona.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -888,6 +888,7 @@ footer {
 
 .footer-hours span {
   font-style: oblique;
+  font-size: 14px;
 }
 
 .footer-nav {
@@ -1105,6 +1106,7 @@ footer {
   font-size: 1.2rem;
   margin: 0.5rem 0;
   color: #222;
+  text-transform: uppercase;;
 }
 
 .menu-card p {
@@ -1114,7 +1116,7 @@ footer {
 }
 
 .menu-card .price {
-  background: #7a7a7a96;
+  background: #02093341;
   color: white;
   padding: 0.4rem 1rem;
   border-radius: 2rem;
