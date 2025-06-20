@@ -290,3 +290,5 @@ document.querySelectorAll('.mobile-menu a').forEach(link => {
     mobileNav?.classList.remove('open');
   });
 });
+
+ document.getElementById("year").textContent = new Date().getFullYear();

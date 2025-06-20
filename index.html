@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="Desdemona.woff2" as="font" type="font/woff2" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
@@ -90,9 +91,9 @@
     </div>
     <section class="fade-carousel" aria-label="Gallery fade carousel">
 
-      <img src="public/slide1.jpg" alt="Tacos with guacamole" class="carousel-fade-slide" />
-      <img src="public/slide2.jpg" alt="Fresh Mexican salsa" class="carousel-fade-slide" />
-      <img src="public/slide3.jpg" alt="La Catrina restaurant interior" class="carousel-fade-slide" />
+      <img src="public/1166702.jpg" alt="Tacos with guacamole" class="carousel-fade-slide" />
+      <img src="public/1595302c.jpg" alt="Fresh Mexican salsa" class="carousel-fade-slide" />
+      <img src="public/1209602.jpg" alt="La Catrina restaurant interior" class="carousel-fade-slide" />
     </section>
   </div>
 
@@ -114,7 +115,7 @@
 
     <div class="about-cards">
       <div class="about-card">
-        <img src="/public/shrimpplate.png" alt="shrimp plate" />
+        <img src="/public/1114802.JPG" alt="shrimp plate" />
       </div>
       <div class="about-card center-card">
         <p class="subtitle">Taste perception</p>
@@ -124,7 +125,7 @@
         <a href="about.html" class="read-more">READ MORE</a>
       </div>
       <div class="about-card">
-        <img src="/public/coctails.png" alt="cocktails" />
+        <img src="/public/16576.JPG" alt="cocktails" />
       </div>
     </div>
   </section>
@@ -183,7 +184,22 @@
             </div>
             <p class="description">11AM-4PM Only on Weekends</p>
           </li>
-
+          <li>
+            <div>
+              <span class="dish">LA CARINOSAS</span>
+              <span class="dots"></span>
+              <span class="price">$24.99</span>
+            </div>
+            <p class="description">Tuesday-Thursday</p>
+          </li>
+          <li>
+            <div>
+              <span class="dish">GRENADINE MARGARITA</span>
+              <span class="dots"></span>
+              <span class="price">Buy 1 Get 1 Free</span>
+            </div>
+            <p class="description">Mondays only</p>
+          </li>
         </ul>
 
         <a href="menu.html" class="view-more">VIEW MORE</a>
@@ -195,19 +211,22 @@
   <section id="gallery" aria-label="Food gallery">
     <h2 class="heading-three">Gallery</h2>
     <div class="gallery-grid">
-      <img src="public/food1.jpg" alt="Taco plate" class="gallery-item" />
-      <img src="public/food2.jpg" alt="Enchiladas" class="gallery-item" />
-      <img src="public/food3.jpg" alt="Guacamole bowl" class="gallery-item" />
-      <img src="public/food4.jpg" alt="Churros" class="gallery-item" />
-      <img src="public/food5.jpg" alt="Salsa sampler" class="gallery-item" />
-      <img src="public/food6.jpg" alt="Grilled corn" class="gallery-item" />
-      <img src="public/food7.jpg" alt="Quesadillas" class="gallery-item" />
-      <img src="public/food8.jpg" alt="Tamales" class="gallery-item" />
-      <img src="public/food9.jpg" alt="Nachos" class="gallery-item" />
-      <img src="public/food10.jpg" alt="Tortilla soup" class="gallery-item" />
-      <img src="public/food11.jpg" alt="Mole chicken" class="gallery-item" />
-      <img src="public/food12.jpg" alt="Mexican rice" class="gallery-item" />
-    </div>
+      <img src="public/IMG_7414.jpg" alt="Taco plate" class="gallery-item" />
+      <img src="public/FOOD/10836.JPG" alt="Enchiladas" class="gallery-item" />
+      <img src="public/10718.JPG" alt="Guacamole bowl" class="gallery-item" />
+
+      <img src="public/FOOD/10666.JPG" alt="Guacamole bowl" class="gallery-item" />
+      <img src="public/IMG_6681.jpg" alt="Guacamole bowl" class="gallery-item" />
+      <img src="public/1595302c.JPG" alt="Salsa sampler" class="gallery-item" />
+      
+      <img src="public/IMG_7413.jpg" alt="Grilled corn" class="gallery-item" />
+      <img src="public/1283602.JPG" alt="Quesadillas" class="gallery-item" />
+      <img src="public/10894.JPG" alt="Grilled corn" class="gallery-item" />
+    
+      <img src="public/FOOD/16184.JPG" alt="Tamales" class="gallery-item" />
+      <img src="public/FOOD/16187.JPG" alt="Nachos" class="gallery-item" />
+      <img src="public/IMG_6679.jpg" alt="Tortilla soup" class="gallery-item" />
+     </div>
 
     <!-- Modal -->
     <div class="modal" id="image-modal">
@@ -229,9 +248,11 @@
         <p>Mexican Food Restaurant</p>
         <div class="footer-hours">
           <span>Hours:</span>
-          <span>Tue-Sun 11am-10pm</span>
+          <span>Sun 10am-9pm</span>
+          <span>Mon 11am-8pm</span>
+          <span>Tue-Thr 11am-10pm</span>
+          <span>Fri-Sat 10am-12pm</span>
         </div>
-
       </div>
 
       <section class="contact" aria-labelledby="footer-contact-title">
@@ -243,7 +264,7 @@
               <path
                 d="M20 4H4a2 2 0 0 0-2 2v0.01L12 13l10-6.99V6a2 2 0 0 0-2-2zM2 8.2V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8.2l-9.12 6.38a1 1 0 0 1-1.16 0L2 8.2z" />
             </svg>
-            <a href="mailto:lacatrinarestaurant1@yahoo.com">lacatrinarestaurant1@yahoo.com</a>
+            <a href="mailto:lacatrinarestaurant1@yahoo.com">moto.gaytan.DZ@gmail.com</a>
           </div>
 
           <div class="contact-item">
@@ -302,8 +323,8 @@
     </div>
 
     <div class="copyright">
-      <p>&copy; 2025 La Catrina Restaurant</p>
-      <a href="roaryko.com" target="_blank">Powered by Roaryko</a>
+      <p>&copy; <span id="year"></span> La Catrina Restaurant</p>
+      <a href="roaryko.com" target="_blank">Powered by Flarekin</a>
     </div>
   </footer>
   <!-- --- -->
