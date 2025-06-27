@@ -1001,131 +1001,6 @@ footer {
 
 /*------------------MENU PAGE--------------------*/
 
-.menu-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem;
-  background: var(--color-footer-bg);
-  padding: var(--spacing-sm);
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  
-}
-
-.menu-nav button {
-  background: var(--color-primary);
-  color: white;
-  padding: 0.6rem 1.2rem;
-  border: none;
-  border-radius: var(--border-radius);
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.menu-nav button.active {
-  background-color: var(--color-secondary);
-}
-
-.menu-category {
-  padding: var(--spacing-md);
-  max-width: var(--max-width);
-  margin: 0 auto;
-}
-
-.menu-item {
-  border-bottom: 1px solid #ddd;
-  padding: 1rem 0;
-}
-
-.menu-item h3 {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.1rem;
-  margin: 0;
-}
-
-.menu-item p {
-  margin: 0.3rem 0 0 0;
-  color: #555;
-}
-
-
-#menu-content {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-#menu-content h2 {
-  font-family: "desdemona", sans-serif;
-  font-size: 2.5rem;
-  text-align: center;
-}
-
-.menu-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
-
-.menu-card {
-  background: #fff;
-  border-radius: 1rem;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.menu-card:hover {
-  transform: translateY(-6px);
-}
-
-.menu-card img {
-  max-width: 180px;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  align-self: center;
-}
-
-.menu-card .info {
-  height: 100%;
-  padding: 1rem;
-  /* flex: 1; */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.menu-card h3 {
-  font-size: 1.2rem;
-  margin: 0.5rem 0;
-  color: #222;
-  text-transform: uppercase;;
-}
-
-.menu-card p {
-  font-size: 0.95rem;
-  color: #666;
-  margin-bottom: 1rem;
-}
-
-.menu-card .price {
-  background: #02093341;
-  color: white;
-  padding: 0.4rem 1rem;
-  border-radius: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  display: inline-block;
-}
-
-
 
 .menu-nav {
   display: flex;
@@ -1153,28 +1028,83 @@ footer {
   background: #ff7f2a;
 }
 
-#menu-content {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem;
+.menu-wrapper {
+      background-color: #1e2a2a;
+    padding: 2rem 10rem;
 }
 
+
+/* --- New Menu Item Styling --- */
+
+.menu-category-title {
+  font-family: "desdemona", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+}
 .menu-item {
-  border-bottom: 1px solid #ddd;
-  padding: 1rem 0;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #34495e;
+
 }
 
-.menu-item h3 {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.1rem;
-  margin: 0;
+.menu-item-top {
+    display: flex;
+    width: 100%;
 }
 
-.menu-item p {
-  margin: 0.3rem 0 0 0;
-  color: #555;
+.menu-item-name {
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap; /* Prevent name from wrapping */
 }
+
+/* The clickable photo icon */
+.photo-icon {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    padding: 2px;
+    transition: transform 0.2s ease;
+}
+
+.photo-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Grey outline for placeholder */
+.icon-placeholder {
+    color: #999898; /* Grey */
+}
+
+/* Orange outline for custom image */
+.icon-custom-image {
+    color: #e67e22; /* Orange */
+}
+
+/* Dotted line filler */
+.dots {
+    flex-grow: 1;
+    border-bottom: 2px dotted #566573;
+    margin: 0 10px;
+    transform: translateY(-10px); /* Aligns dots with text baseline */
+}
+
+.menu-item-price {
+    font-weight: bold;
+    color: #e67e22;
+}
+
+.menu-item-description {
+    margin-top: 5px;
+    margin-left: 30px; /* Aligns description under the name, past the icon */
+    font-style: italic;
+    color: #a4a5a5;
+    font-size: .9rem;
+}
+
+
 
 /*------------------ABOUT PAGE--------------------*/
 
