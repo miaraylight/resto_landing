@@ -862,7 +862,7 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "GUACAMOLE & CHIPS",
         price: "$11.99",
         description: "12OZ, 16OZ for $14.99",
-        image: "public/placeholder1.png",
+        image: "public/FOOD/guacamole.JPG",
       },
       {
         name: "QUESO FUNDIDO",
@@ -942,13 +942,13 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "TOSTADAS DE CEVICHE",
         price: "$6.99",
         description: null,
-        image: "public/placeholder1.png",
+        image: "public/FOOD/tostada_de_ceviche.JPG",
       },
       {
         name: "CAMARONES A LA CUCARACHA",
         price: "$23.99",
         description: null,
-        image: "public/placeholder1.png",
+        image: "public/FOOD/camaroncucaracha.JPG",
       },
       {
         name: "CEVICHE 16OZ",
@@ -1021,7 +1021,7 @@ document.addEventListener("DOMContentLoaded", () => {
         price: "$26.99",
         description:
           "6 oz arrachera, chicken breast, grilled shrimp served with rice, beans guacamole",
-        image: "public/placeholder1.png",
+        image: "public/FOOD/marYtierra.JPG",
       },
       {
         name: "CECINA DINNER",
@@ -1070,7 +1070,7 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "MILANESA DE RES OR MILANESA DE POLLO",
         price: "$14.99",
         description: "Served with salad, rice, beans chicken or beef",
-        image: "public/placeholder1.png",
+        image: "public/FOOD/milanesa_de_pollo.JPG",
       },
       {
         name: "STEAK FAJITAS",
@@ -1095,7 +1095,7 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "CHEESEBURGER",
         price: "$10.99",
         description: "Served with lettuce, tomato, onion, mayonnaise and fries",
-        image: "public/placeholder1.png",
+        image: "public/FOOD/cheeseburger.JPG",
       },
       {
         name: "DOUBLE CHEESEBURGER",
@@ -1207,7 +1207,7 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "CHILAQUILES HUEVOS",
         price: "$14.99",
         description: "Served with rice, beans",
-        image: "public/placeholder1.png",
+        image: "public/FOOD/chilaquilesconhuevo.JPG",
       },
       {
         name: "CHILAQUILES",
@@ -1243,7 +1243,7 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "STEAK & EGG",
         price: "$21.00",
         description: "W egg and tator tots",
-        image: "public/placeholder1.png",
+        image: "public/FOOD/stake_and_eggs.JPG",
       },
       {
         name: "HUEVOS RANCHEROS",
@@ -1273,7 +1273,7 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "French toast",
         price: "$10.99",
         description: null,
-        image: "public/placeholder1.png",
+        image: "public/FOOD/french_toast.JPG",
       },
       {
         name: "2x2",
@@ -1288,7 +1288,7 @@ document.addEventListener("DOMContentLoaded", () => {
         price: "$3.99",
         description:
           "Served on corn tortillas with Cilantro & Onion unless otherwise noted",
-        image: "public/placeholder1.png",
+        image: "public/FOOD/taco.JPG",
       },
       {
         name: "Taco (Premium Filling)",
@@ -1329,7 +1329,7 @@ document.addEventListener("DOMContentLoaded", () => {
         price: "$18.99",
         description:
           "3 Quesadillas w/ Consomé - Birria meat and melted cheese grilled in tortillas, served with broth for dipping",
-        image: "public/placeholder1.png",
+        image: "public/FOOD/quesabirria.JPG",
       },
       {
         name: "Taco Dinner (3 Tacos with your choice of Standard Fillings)",
@@ -1369,7 +1369,7 @@ document.addEventListener("DOMContentLoaded", () => {
         price: "$14.99",
         description:
           "Your choice of Standard Filling, smothered in homemade Red Salsa OR Mole Sauce, topped with cheese",
-        image: "public/placeholder1.png",
+        image: "public/FOOD/katrina-burrito.JPG",
       },
       {
         name: "Burrito Dinner (Standard Burrito)",
@@ -1402,7 +1402,7 @@ document.addEventListener("DOMContentLoaded", () => {
         price: "$5.99",
         description:
           "Tostada: Crispy flat corn tortilla / Sope: Thick corn masa base with pinched edges. Both topped with Beans, Cheese, Sour Cream, Lettuce, Tomato, Cilantro & Onion. Choose Filling: Standard Filling, Premium Filling, or Vegetarian Filling.",
-        image: "public/placeholder1.png",
+        image: "public/FOOD/sope.JPG",
       },
     ],
     Drinks: [
@@ -1464,13 +1464,13 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "REGULAR MICHELADA",
         price: "$12.00",
         description: null,
-        image: "public/placeholder1.png",
+        image: "public/DRINKS/michelada.JPG",
       },
       {
         name: "LAS CARIÑOSAS (tamarindo / STRAWBERRY / MANGO)",
         price: "$29.99",
         description: null,
-        image: "public/placeholder1.png",
+        image: "public/DRINKS/LASCARINOSAS.jpeg",
       },
       {
         name: "PALOMASO 32 oz w hornitos tequila bottle",
@@ -1488,7 +1488,7 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "CATRINA QUEEN serv sm botlle de henesys",
         price: "$28.99",
         description: null,
-        image: "public/placeholder1.png",
+        image: "public/DRINKS/katrinaQueen.JPG",
       },
       {
         name: "PINA COLADA QUEEN serve w sm bottle Malibu",
@@ -1500,13 +1500,13 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "MARGARITA ORIGINAL 12 oz",
         price: "$12.00",
         description: null,
-        image: "public/placeholder1.png",
+        image: "public/DRINKS/margarita_original.JPG",
       },
       {
         name: "MARGARITA QUEEN w coronita beer or modelito",
         price: "$16.00",
         description: null,
-        image: "public/placeholder1.png",
+        image: "public/DRINKS/margaritaqueen.JPG",
       },
       {
         name: "MARGARITA STRAWBERRY/MANGO/TAMARINDO 12 oz",
@@ -1524,13 +1524,19 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "PIÑA COLADA",
         price: "$13.00",
         description: null,
-        image: "public/placeholder1.png",
+        image: "public/DRINKS/pinacoladaqueen.JPG",
       },
       {
         name: "LONG ISLAND",
         price: "$8.00",
         description: null,
         image: "public/placeholder1.png",
+      },
+      {
+        name: "PELONCHELA",
+        price: "$25.00",
+        description: null,
+        image: "public/DRINKS/pelonchela.JPG",
       },
       {
         name: "D’USSE COCKTAIL",
@@ -1542,7 +1548,7 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "CANTARITO",
         price: "$13.00",
         description: null,
-        image: "public/placeholder1.png",
+        image: "public/DRINKS/cantarito.JPG",
       },
       {
         name: "DON JULIO 70 PATRON CRYSTALINO",
@@ -1664,7 +1670,7 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "CHURRO",
         price: "$5.99",
         description: null,
-        image: "public/placeholder1.png",
+        image: "public/FOOD/churritos.JPG",
       },
       {
         name: "CHEESECAKE",
@@ -1676,7 +1682,7 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "OREO CAKE",
         price: "$5.99",
         description: null,
-        image: "public/placeholder1.png",
+        image: "public/FOOD/OREOCAKE.JPG",
       },
       {
         name: "TACO DINNER",
@@ -1717,7 +1723,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const modalImage = document.getElementById("modalImage");
   const closeButton = document.querySelector(".modal-close-button");
 
-  // SVG for the photo icon. Using an SVG makes it easy to style with CSS.
+  // SVG for the photo icon
   const photoIconSVG = `
         <svg class="photo-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
@@ -1787,7 +1793,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (iconWrapper) {
       const imgSrc = iconWrapper.dataset.imgSrc;
       modalImage.src = imgSrc;
-      modal.style.display = "block";
+      modal.style.display = "flex";
     }
   });
 

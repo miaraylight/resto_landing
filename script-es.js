@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "Guacamole y Totopos",
         price: "$11.99",
         description: "12oz, o 16oz por $14.99",
-        image: "public/placeholder1.png",
+        image: "public/FOOD/guacamole.JPG",
       },
       {
         name: "Queso Fundido",
@@ -88,13 +88,13 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "Tostadas de Ceviche",
         price: "$6.99",
         description: null,
-        image: "public/placeholder1.png",
+        image: "public/FOOD/tostada_de_ceviche.JPG",
       },
       {
         name: "Camarones a la Cucaracha",
         price: "$23.99",
         description: null,
-        image: "public/placeholder1.png",
+        image: "public/FOOD/camaroncucaracha.JPG",
       },
       {
         name: "Ceviche 16oz",
@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
         price: "$26.99",
         description:
           "6 oz de arrachera, pechuga de pollo y camarones a la plancha. Servido con arroz, frijoles y guacamole.",
-        image: "public/placeholder1.png",
+        image: "public/FOOD/marYtierra.JPG",
       },
       {
         name: "Plato de Cecina",
@@ -217,7 +217,7 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "Milanesa de Res o de Pollo",
         price: "$14.99",
         description: "Servida con ensalada, arroz y frijoles.",
-        image: "public/placeholder1.png",
+        image: "public/FOOD/milanesa_de_pollo.JPG",
       },
       {
         name: "Fajitas de Bistec",
@@ -244,7 +244,7 @@ document.addEventListener("DOMContentLoaded", () => {
         price: "$10.99",
         description:
           "Servida con lechuga, tomate, cebolla, mayonesa y papas fritas.",
-        image: "public/placeholder1.png",
+        image: "public/FOOD/cheeseburger.JPG",
       },
       {
         name: "Hamburguesa Doble con Queso",
@@ -356,7 +356,7 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "Chilaquiles con Huevos",
         price: "$14.99",
         description: "Servidos con arroz y frijoles.",
-        image: "public/placeholder1.png",
+        image: "public/FOOD/chilaquilesconhuevo.JPG",
       },
       {
         name: "Chilaquiles",
@@ -392,7 +392,7 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "Bistec y Huevo",
         price: "$21.00",
         description: "Con huevo y papas 'tater tots'.",
-        image: "public/placeholder1.png",
+        image: "public/FOOD/stake_and_eggs.JPG",
       },
       {
         name: "Huevos Rancheros",
@@ -423,7 +423,7 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "Pan Francés",
         price: "$10.99",
         description: null,
-        image: "public/placeholder1.png",
+        image: "public/FOOD/french_toast.JPG",
       },
       {
         name: "2x2",
@@ -437,7 +437,7 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "Taco (Relleno Clásico)",
         price: "$3.99",
         description: "Servido en tortillas de maíz con cilantro y cebolla.",
-        image: "public/placeholder1.png",
+        image: "public/FOOD/taco.JPG",
       },
       {
         name: "Taco (Relleno Premium)",
@@ -476,7 +476,7 @@ document.addEventListener("DOMContentLoaded", () => {
         price: "$18.99",
         description:
           "3 quesadillas con consomé - Birria y queso derretido en tortillas a la plancha, servidas con consomé.",
-        image: "public/placeholder1.png",
+        image: "public/FOOD/quesabirria.JPG",
       },
       {
         name: "Orden de Tacos (3 Tacos con Relleno Clásico)",
@@ -516,7 +516,7 @@ document.addEventListener("DOMContentLoaded", () => {
         price: "$14.99",
         description:
           "Tu elección de relleno clásico, bañado en salsa roja casera O mole, y gratinado con queso.",
-        image: "public/placeholder1.png",
+        image: "public/FOOD/katrina-burrito.JPG",
       },
       {
         name: "Orden de Burrito (Burrito Clásico)",
@@ -549,7 +549,7 @@ document.addEventListener("DOMContentLoaded", () => {
         price: "$5.99",
         description:
           "Tostada: Tortilla de maíz plana y crujiente / Sope: Base gruesa de masa de maíz. Ambos con frijoles, queso, crema, lechuga, tomate, cilantro y cebolla. Elige Relleno: Clásico, Premium o Vegetariano.",
-        image: "public/placeholder1.png",
+        image: "public/FOOD/sope.JPG",
       },
     ],
     Bebidas: [
@@ -617,7 +617,7 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "Las Cariñosas (Tamarindo / Fresa / Mango)",
         price: "$29.99",
         description: null,
-        image: "public/placeholder1.png",
+        image: "public/DRINKS/LASCARINOSAS.jpeg",
       },
       {
         name: "Palomazo 32oz con botella de tequila Hornitos",
@@ -635,7 +635,7 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "Catrina Queen servido con botellita de Hennessy",
         price: "$28.99",
         description: null,
-        image: "public/placeholder1.png",
+        image: "public/DRINKS/katrinaQueen.JPG",
       },
       {
         name: "Piña Colada Queen servida con botellita de Malibu",
@@ -647,13 +647,13 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "Margarita Original 12oz",
         price: "$12.00",
         description: null,
-        image: "public/placeholder1.png",
+        image: "public/DRINKS/margarita_original.JPG",
       },
       {
         name: "Margarita Queen con Coronita o Modelito",
         price: "$16.00",
         description: null,
-        image: "public/placeholder1.png",
+        image: "public/DRINKS/margaritaqueen.JPG",
       },
       {
         name: "Margarita de Fresa/Mango/Tamarindo 12oz",
@@ -671,13 +671,19 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "Piña Colada",
         price: "$13.00",
         description: null,
-        image: "public/placeholder1.png",
+        image: "public/DRINKS/pinacoladaqueen.JPG",
       },
       {
-        name: "Long Island Iced Tea",
+        name: "Long Island",
         price: "$8.00",
         description: null,
         image: "public/placeholder1.png",
+      },
+      {
+        name: "PELONCHELA",
+        price: "$25.00",
+        description: null,
+        image: "public/DRINKS/pelonchela.JPG",
       },
       {
         name: "Cóctel D'USSÉ",
@@ -689,7 +695,7 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "Cantarito",
         price: "$13.00",
         description: null,
-        image: "public/placeholder1.png",
+        image: "public/DRINKS/cantarito.JPG",
       },
       {
         name: "DON JULIO 70 / PATRÓN CRISTALINO",
@@ -811,7 +817,7 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "Churro",
         price: "$5.99",
         description: null,
-        image: "public/placeholder1.png",
+        image: "public/FOOD/churritos.JPG",
       },
       {
         name: "Pastel de Queso",
@@ -823,7 +829,7 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "Pastel de Oreo",
         price: "$5.99",
         description: null,
-        image: "public/placeholder1.png",
+        image: "public/FOOD/OREOCAKE.JPG",
       },
       {
         name: "Orden de Taco para Niños",
@@ -936,7 +942,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (iconWrapper) {
       const imgSrc = iconWrapper.dataset.imgSrc;
       modalImage.src = imgSrc;
-      modal.style.display = "block";
+      modal.style.display = "flex";
     }
   });
 
